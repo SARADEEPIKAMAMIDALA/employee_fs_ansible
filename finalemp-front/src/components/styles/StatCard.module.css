@@ -1,0 +1,32 @@
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+.header h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+}
+.value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+.subtitle {
+  font-size: 0.875rem;
+  color: #4b5563;
+}

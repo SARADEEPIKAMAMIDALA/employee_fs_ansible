@@ -1,0 +1,13 @@
+.card { background: #fff; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.header { padding: 1.5rem; border-bottom: 1px solid #e5e7eb; }
+.header h3 { font-size: 1.125rem; font-weight: 600; margin-bottom: 0.25rem; }
+.header p { color: #4b5563; font-size: 0.875rem; }
+.list { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.item { display: flex; justify-content: space-between; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px; align-items: center; }
+.dateStatus { text-align: center; }
+.status { display: inline-flex; padding: 2px 6px; border-radius: 9999px; font-size: 0.75rem; margin-top: 0.25rem; }
+.present { background: #d1fae5; color: #065f46; }
+.late { background: #fef3c7; color: #92400e; }
+.details { display: flex; gap: 2rem; }
+.label { font-size: 0.75rem; color: #6b7280; }
+.value { font-weight: 500; }

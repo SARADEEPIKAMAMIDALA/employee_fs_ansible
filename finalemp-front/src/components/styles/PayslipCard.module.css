@@ -1,0 +1,95 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.header p {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+.list {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  align-items: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #dbeafe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #1e40af;
+}
+.month {
+  font-weight: 500;
+}
+.date {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.amount {
+  text-align: right;
+}
+.status {
+  display: inline-flex;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  background: #d1fae5;
+  color: #065f46;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  align-items: center;
+}
+.statusIcon {
+  width: 12px;
+  height: 12px;
+}
+.downloadBtn {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.downloadBtn:hover {
+  background: #f9fafb;
+}
+.downloadIcon {
+  width: 16px;
+  height: 16px;
+}

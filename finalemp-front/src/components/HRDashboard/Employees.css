@@ -1,0 +1,198 @@
+/* Main employees section */
+.employees {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Top actions row */
+.employee-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Search box */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.3rem 0.8rem;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+  border-color: #3b82f6;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: transparent;
+  width: 180px;
+}
+
+/* Buttons */
+.btn {
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn:hover {
+  background-color: #f3f4f6;
+}
+
+.btn.primary {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #2563eb;
+}
+
+/* Card layout */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.card-header p {
+  margin: 0.2rem 0 0;
+}
+
+/* Add Employee Form */
+form input,
+form select {
+  border: 1px solid #d1d5db;
+  outline: none;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+form button {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Employee List */
+.list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background 0.2s ease;
+}
+
+.list-item:hover {
+  background-color: #f9fafb;
+}
+
+/* Employee Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 50%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+/* Status badges */
+.status {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 75px;
+  text-align: center;
+}
+
+/* Small icons & buttons */
+.btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .employees {
+    padding: 1rem;
+  }
+
+  .employee-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .list {
+    max-height: none;
+  }
+
+  form {
+    grid-template-columns: 1fr !important;
+  }
+}
